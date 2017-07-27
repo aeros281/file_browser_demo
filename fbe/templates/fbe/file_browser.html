@@ -1,0 +1,26 @@
+{% extends "base_template/base.html" %}
+{% load static %}
+
+{% block header %}
+    <h1>File Browser</h1>
+{% endblock %}
+
+{% block sidebar %}
+    <js-tree tree-events="select_node:nodeSelected" tree-ajax="fbe/api/getroot"></js-tree>
+{% endblock %}
+
+{% block content %}
+    <div id="editor" style="width:100%;height: 600px;"></div>
+{% endblock %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+{% endblock %}
+
+{% block javascript %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+    <script src="{% static 'fbe/jsTree.directive.js' %}"></script>
+    <script src="{% static 'fbe/factory.js' %}"></script>
+    <script src="{% static 'fbe/app.js' %}"></script>
+{% endblock %}

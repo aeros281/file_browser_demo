@@ -1,0 +1,95 @@
+Xft.dpi:	89.37
+
+Xft.antialias:  1
+!Xft.dpi:    96
+Xft.hinting:    1
+Xft.hintstyle:  hintslight
+Xft.rgba:   rgb
+
+!Urxvt configuration
+URxvt.font: xft:Inconsolata for Powerline:bold:size=13:antialias=true
+URxvt.boldFont: xft:Inconsolata for Powerline:bold:size=13:antialias=true
+URxvt*secondaryScroll:true
+URxvt.scrollBar: false
+URxvt.cursorColor: #38aac7
+URxvt.underlineColor:   cyan
+URxvt.saveLines:        8192
+URxvt.letterSpace: -1
+!URxvt.perl-ext-common:  default,matcher
+URxvt.url-launcher:      /usr/bin/google-chrome-stable
+URxvt.matcher.button:   1
+
+
+!Internal padding
+URxvt.internalBorder: 10
+
+URxvt*dynamicColors:on
+
+
+! Cursor
+URxvt.cursorBlink:          true
+!URxvt.cursorColor:          #657b83
+URxvt.cursorUnderline:      false
+
+! Pointer
+URxvt.pointerBlank:         true
+
+!!Source http://github.com/altercation/solarized
+
+!*background: #171416
+!*foreground: #D3D3D3
+*background: #282828
+*foreground: #839496
+!!*fading: 40
+*fadeColor: #002b36
+*cursorColor: #93a1a1
+*pointerColorBackground: #586e75
+*pointerColorForeground: #93a1a1
+
+!! black dark/light
+*color0: #073642
+*color8: #002b36
+
+!! red dark/light
+*color1: #dc322f
+*color9: #cb4b16
+
+!! green dark/light
+*color2: #859900
+*color10: #586e75
+
+!! yellow dark/light
+*color3: #b58900
+*color11: #657b83
+
+!! blue dark/light
+*color4: #268bd2
+*color12: #839496
+
+!! magenta dark/light
+*color5: #d33682
+*color13: #6c71c4
+
+!! cyan dark/light
+*color6: #2aa198
+*color14: #93a1a1
+
+!! white dark/light
+*color7: #eee8d5
+*color15: #fdf6e3
+
+!Urxvt copy-paste script
+!URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+
+URxvt.iso14755: False
+
+URxvt.perl-ext-common: default,clipboard
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #2f343f, #2f343f, #2f343f
+rofi.color-normal: #2f343f, #f3f4f5, #2f343f, #2f343f, #9575cd
+rofi.color-active: #fdf6e3, #268bd2, #eee8d5, #268bd2, #fdf6e3
+rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3
